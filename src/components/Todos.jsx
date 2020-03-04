@@ -32,9 +32,6 @@ const Todos = () => {
 
   return (
     <section className="todos">
-      {/*todos.map(todo) => {
-        return <Todo text={todo.text} /> 
-      }}} */}
       {todos.map(todo => {
         return <Todo text={todo.text} />;
       })}
