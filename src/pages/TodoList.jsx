@@ -11,10 +11,19 @@ const TodoList = () => {
     { text: "Ini Bapak Budi" },
     { text: "Ini Ibu Budi" }
   ]);
+
+  const addTodo = value => {
+    const addedTodo = [...todos, { text: value }];
+
+    setTodos(addedTodo);
+  };
+
+  console.log("todos", todos);
+
   return (
     <Paper>
       <Header />
-      <Todoform />
+      <Todoform addTodo={addTodo} />
       <Todos todos={todos} />
     </Paper>
   );
