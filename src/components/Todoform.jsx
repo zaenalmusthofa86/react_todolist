@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-const Todoform = ({ addTodo }) => {
+const Todoform = ({ addTodo, showAdd }) => {
   const [value, setValue] = useState("");
 
   const handleFormSubmit = e => {
@@ -15,23 +15,28 @@ const Todoform = ({ addTodo }) => {
     setValue("");
   };
 
-  return (
-    <section className="add">
-      <form className="add-form" onSubmit={handleFormSubmit}>
-        <input
-          type="text"
-          className="add-input"
-          value={value}
-          onChange={e => setValue(e.target.value)}
-        />
-        <button className="add-btn male-black-color">Add</button>
-      </form>
-    </section>
-  );
+  if (showAdd) {
+    return (
+      <section className="add">
+        <form className="add-form" onSubmit={handleFormSubmit}>
+          <input
+            type="text"
+            className="add-input"
+            value={value}
+            onChange={e => setValue(e.target.value)}
+          />
+          <button className="add-btn male-black-color">Add</button>
+        </form>
+      </section>
+    );
+  } else {
+    return null;
+  }
 };
 
 Todoform.propTypes = {
-  addTodo: PropTypes.func.isRequired
+  addTodo: PropTypes.func.isRequired,
+  showAdd: PropTypes.bool.isRequired
 };
 
 export default Todoform;
