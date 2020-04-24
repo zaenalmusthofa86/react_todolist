@@ -11,18 +11,20 @@ const TodoList = () => {
     { text: "Ini Bapak Budi" },
     { text: "Ini Ibu Budi" }
   ]);
+  const [showAdd, setShowAdd] = useState(false);
 
   const addTodo = value => {
     const addedTodo = [...todos, { text: value }];
 
     setTodos(addedTodo);
   };
+  const showAddToggle = () => setShowAdd(!showAdd);
 
-  console.log("todos", todos);
+  console.log("showAdd", showAdd);
 
   return (
     <Paper>
-      <Header />
+      <Header showAddToggle={showAddToggle} />
       <Todoform addTodo={addTodo} />
       <Todos todos={todos} />
     </Paper>
