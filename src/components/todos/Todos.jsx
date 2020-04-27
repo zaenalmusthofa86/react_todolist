@@ -1,6 +1,6 @@
 import React from "react";
 
-import Todo from "./Todo";
+import Todo from "../todo/Todo";
 import PropTypes from "prop-types";
 
 const Todos = ({ todos, completeTodo }) => {

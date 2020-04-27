@@ -98,7 +98,7 @@ html {
   text-shadow: 1px 1px 2px var(--main-black-color);
 } */
 
-.add {
+/* .add {
   padding: 16px;
 }
 
@@ -137,7 +137,7 @@ html {
 
 .add-btn.main-black-color:active {
   text-shadow: 1px 1px 2px var(--main-black-color);
-}
+} */
 
 .todos {
   display: flex;
@@ -146,7 +146,7 @@ html {
   min-height: 500px;
 }
 
-.todo {
+/* .todo {
   position: relative;
 
   flex: 1 0 auto;
@@ -158,15 +158,15 @@ html {
   font-size: 24px;
 
   border-bottom: 1px solid var(--main-red-color);
-}
+} */
 
-.todo-text {
+/* .todo-text {
   width: 100%;
   height: 50px;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-}
+} */
 
 .todo-placeholder-text {
   font-family: "Homemade Apple", sans-serif;
