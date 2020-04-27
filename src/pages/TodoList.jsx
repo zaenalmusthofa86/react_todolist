@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Paper from "../components/Paper";
+import Paper from "../components/paper/Paper";
 import Header from "../components/header/Header";
 import Todoform from "../components/Todoform";
 import Todos from "../components/Todos";
