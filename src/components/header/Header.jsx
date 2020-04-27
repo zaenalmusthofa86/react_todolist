@@ -1,16 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Button from "../components/button/Button";
+import Button from "../button/Button";
+
+import styles from "./header.module.css";
 
 const Header = ({ showAddToggle, showAdd, clearTodos }) => {
   return (
-    <section className="header">
+    <section className={styles.header}>
       {/* <button className="header-btn male-black-color" onClick={showAddToggle}>
         {showAdd ? "finish" : "Add"}
       </button> */}
       <Button text={showAdd ? "finish" : "Add"} onClick={showAddToggle} />
-      <h1 className="header-title">Todo Lists</h1>
+      <h1 className={styles.headerTitle}>Todo Lists</h1>
       {/* <button className="header-btn male-red-color" onClick={clearTodos}>
         Clear
       </button> */}
