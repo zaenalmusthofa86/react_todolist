@@ -3,9 +3,11 @@ import React from "react";
 import Todo from "../todo/Todo";
 import PropTypes from "prop-types";
 
+import styles from "./todos.module.css";
+
 const Todos = ({ todos, completeTodo }) => {
   return (
-    <section className="todos">
+    <section className={styles.todos}>
       {todos.length > 0 &&
         todos.map((todo, index) => {
           return (
