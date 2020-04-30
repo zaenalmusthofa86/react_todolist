@@ -3,10 +3,10 @@ import { css } from "@emotion/core";
 export const paper = ({ theme }) =>
   css`
     width: 600px;
-    height: 820px;
+    height: 657px;
     background-color: ${theme.background.color.primary};
     border-radius: 4px;
-    padding: 32;
+    padding: 32px;
   `;
 
 export const frame = ({ theme }) =>
