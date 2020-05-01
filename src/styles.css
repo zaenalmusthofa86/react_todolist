@@ -47,7 +47,7 @@ html {
 
 /* .container {
   width: 600px;
-  height: 657px;
+  height: 800px;
   background-color: #7fffd4;
   border-radius: 4px;
 
@@ -168,7 +168,7 @@ html {
   transform: translate(-50%);
 } */
 
-.todo-placeholder-text {
+/* .todo-placeholder-text {
   font-family: "Homemade Apple", sans-serif;
   font-size: 24px;
   text-align: center;
@@ -178,4 +178,4 @@ html {
 .add-button-placeholder-text {
   font-family: "Bungee", sans-serif;
   font-size: 24px;
-}
+} */
