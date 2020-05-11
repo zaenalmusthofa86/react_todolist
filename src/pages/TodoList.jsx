@@ -5,6 +5,8 @@ import Header from "../components/header/Header";
 import Todoform from "../components/todoform/Todoform";
 import Todos from "../components/todos/Todos";
 
+import Container from "../layout/Container";
+
 const TodoList = () => {
   const [todos, setTodos] = useState([
     { text: "Ini Budi", isCompleted: false },
@@ -35,13 +37,19 @@ const TodoList = () => {
 
   return (
     <Paper>
-      <Header
-        showAddToggle={showAddToggle}
-        showAdd={showAdd}
-        clearTodos={clearTodos}
-      />
-      <Todoform addTodo={addTodo} showAdd={showAdd} />
-      <Todos todos={todos} completeTodo={completeTodo} />
+      <Container
+        flexDirection="column"
+        justifyContent="space-between"
+        height="100%"
+      >
+        <Header
+          showAddToggle={showAddToggle}
+          showAdd={showAdd}
+          clearTodos={clearTodos}
+        />
+        <Todoform addTodo={addTodo} showAdd={showAdd} />
+        <Todos todos={todos} completeTodo={completeTodo} />
+      </Container>
     </Paper>
   );
 };
