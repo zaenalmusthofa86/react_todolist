@@ -37,7 +37,7 @@ const Todos = ({ todos, completeTodo }) => {
   );
 };
 
-Todos.proptypes = {
+Todos.propTypes = {
   todos: PropTypes.arrayOf(
     PropTypes.shape({
       text: PropTypes.string

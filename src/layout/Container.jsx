@@ -24,8 +24,7 @@ const Container = ({
   `;
   return (
     <div className="flex-container" css={containerStyles}>
-      {" "}
-      {children}{" "}
+      {children}
     </div>
   );
 };

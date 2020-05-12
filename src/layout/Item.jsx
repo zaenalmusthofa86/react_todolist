@@ -17,13 +17,13 @@ const Item = ({ children, flex, align, padding }) => {
   );
 };
 
-Item.defaultProp = {
+Item.defaultProps = {
   align: "left",
   padding: "unset"
 };
 
 Item.propTypes = {
-  children: PropTypes.oneOf([
+  children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
   ]),
