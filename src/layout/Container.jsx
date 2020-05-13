@@ -41,8 +41,8 @@ Container.defaultProps = {
 
 Container.propTypes = {
   children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.mode),
-    PropTypes.mode
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
   ]),
   flexDirection: PropTypes.oneOf([
     "row",
