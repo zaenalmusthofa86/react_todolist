@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import Paper from "../components/paper/PaperClass";
 import Header from "../components/header/HeaderClass";
-import Todoform from "../components/todoform/Todoform";
+import Todoform from "../components/todoform/TodoformClass";
 import Todos from "../components/todos/Todos";
 
 import Container from "../layout/Container";
